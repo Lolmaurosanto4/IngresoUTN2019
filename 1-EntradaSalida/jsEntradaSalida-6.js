@@ -3,9 +3,9 @@ transformarlos a enteros (parseInt) y Sumarlos.
 Mostar el resulto por medio de "ALERT"*/
 function sumar()
 {
-    var numero1   
+    var numero1;  
     
-    var numero2
+    var numero2;
 
     var resultado;
 
@@ -13,11 +13,17 @@ function sumar()
 
     numero2 = document.getElementById("numeroDos").value;
 
-    parseInt(numero1 + numero2);
+    numero1 = parseInt(numero1);
 
-    parseInt = resultado;
+    numero2 = parseInt(numero2);
 
-    alert(resultado);
+    /*alert(typeof numero1)
+
+    alert(typeof numero2)*/
+
+    resultado = numero1 + numero2;
+
+    alert("La suma es " + resultado);
 
 
 }
