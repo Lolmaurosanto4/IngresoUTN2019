@@ -7,11 +7,18 @@ function sumar()
     
     var numero2
 
+    var resultado;
+
     numero1 = document.getElementById("numeroUno").value;
 
     numero2 = document.getElementById("numeroDos").value;
 
-    parseInt
+    parseInt(numero1 + numero2);
+
+    parseInt = resultado;
+
+    alert(resultado);
+
 
 }
 
