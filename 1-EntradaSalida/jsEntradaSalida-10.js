@@ -8,11 +8,16 @@ function MostrarDescuento()
     
     var numero2 = 0.75;
 
+    var resultado
+
     numero1 = document.getElementById("importe").value;
 
     numero1 = parseInt(numero1);
 
-    document.getElementById("resultado").value = numero1 * numero2;
+    resultado = numero1 * numero2
+
+    document.getElementById("resultado").value = resultado;
+
 
     
 }
