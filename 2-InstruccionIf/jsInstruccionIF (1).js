@@ -11,7 +11,7 @@ function Mostrar()
     alert("Niña bonita");
 }
 
-    alert("Termino el ejercicio");
+  
 
 
 

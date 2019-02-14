@@ -11,7 +11,7 @@ function Mostrar()
     alert("Mayor de edad");
 }
 
-    alert("Termino el ejercicio");
+   
 
 
 
