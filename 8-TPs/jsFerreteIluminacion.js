@@ -10,5 +10,74 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+    var lamparitas;
+    var precio;
+    var descuento;
+    var preciocondescuento;
+    var sindescuento;
+    var marca;
+    var IIBB = 0;
+
+    lamparitas = parseInt(document.getElementById("Cantidad").value);
+    precio = 35;
+    sindescuento = lamparitas * precio;
+    marca = document.getElementById("Marca").value;
+
+    if (lamparitas >= 6) {
+        descuento = sindescuento * 50 / 100;
+    }
+    else if (lamparitas == 5) {
+        if (marca == "ArgentinaLuz"){
+        descuento = sindescuento * 40 / 100;
+    }
+        else{
+            descuento = sindescuento * 30 / 100;
+        }
+        //alert("estoy en el bloque 5");
+    }
+    else if (lamparitas == 4) {
+        if (marca == "ArgentinaLuz" || "FelipeLamparas"){
+            descuento = sindescuento * 25 / 100;
+        }
+        else{
+            descuento = sindescuento * 20 / 100;
+        }
+        //alert("estoy en el bloque 4");
+
+    }
+    else if (lamparitas == 3) {
+        if (marca == "ArgentinaLuz"){
+            descuento = sindescuento * 15 / 100;
+        }
+        else if (marca == "FelipeLamparas"){
+            descuento = sindescuento * 10 / 100;
+        }
+        else{
+            descuento = sindescuento * 5 / 100;
+        }
+        //alert("estoy en el bloque 3");
+    }
+    else{
+        descuento = 0;
+        alert("estoy en el bloque 1 o 2");
+
+    }
+
+    preciocondescuento = sindescuento - descuento;
+    alert(preciocondescuento);
+
+    if (preciocondescuento > 120) {
+        IIBB = preciocondescuento * 10 / 100;
+        alert("IIBB que usted pago $" + IIBB);
+    }
+    document.getElementById("precioDescuento").value = preciocondescuento + IIBB;
+
+    
+
+    
+    
+
+
+
+
 }
