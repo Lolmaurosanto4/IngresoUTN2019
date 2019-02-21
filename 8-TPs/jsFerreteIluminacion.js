@@ -23,7 +23,51 @@ function CalcularPrecio ()
     sindescuento = lamparitas * precio;
     marca = document.getElementById("Marca").value;
 
-    if (lamparitas >= 6) {
+    
+    
+    switch(lamparitas){
+        case 1:
+        case 2:
+        descuento = 0;
+        break;
+        case 3:
+        if (marca == "ArgentinaLuz"){
+            descuento = sindescuento * 15 / 100;
+        }
+        else if (marca == "FelipeLamparas"){
+            descuento = sindescuento * 10 / 100;
+        }
+        else{
+            descuento = sindescuento * 5 / 100;
+        }
+        break;
+        case 4:
+        if (marca == "ArgentinaLuz" || "FelipeLamparas"){
+            descuento = sindescuento * 25 / 100;
+        }
+        else{
+            descuento = sindescuento * 20 / 100;
+        }
+        break;
+        case 5:if (marca == "ArgentinaLuz"){
+            descuento = sindescuento * 40 / 100;
+        }
+            else{
+                descuento = sindescuento * 30 / 100;
+            }
+        break;
+        default:
+        descuento = sindescuento * 50 / 100;
+
+    }
+    
+    
+    
+    
+    
+    
+    
+   /* if (lamparitas >= 6) {
         descuento = sindescuento * 50 / 100;
     }
     else if (lamparitas == 5) {
@@ -59,12 +103,12 @@ function CalcularPrecio ()
     }
     else{
         descuento = 0;
-        alert("estoy en el bloque 1 o 2");
+        //alert("estoy en el bloque 1 o 2");
 
     }
-
+*/
     preciocondescuento = sindescuento - descuento;
-    alert(preciocondescuento);
+    //alert(preciocondescuento);
 
     if (preciocondescuento > 120) {
         IIBB = preciocondescuento * 10 / 100;
