@@ -1,5 +1,19 @@
 function Mostrar()
 {
+    var i;
+
+    for(  ;  ;  ){
+
+        i = parseInt(prompt("Ingrese un numero"));
+        while(isNaN(i)){
+            i = parseInt(prompt("Eso no es un numero. Ingrese un numero"));
+        }
+        if(i){
+            break;
+        }
+    console.log(i);
+    }
+
 
 
 
