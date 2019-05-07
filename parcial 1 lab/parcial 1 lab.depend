@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1557234739 source:c:\users\alumno\desktop\parcial 1 lab\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pelicula.h"
+
+1557233928 c:\users\alumno\desktop\parcial 1 lab\pelicula.h
+	<stdio.h>
+
+1557234547 source:c:\users\alumno\desktop\parcial 1 lab\pelicula.c
+	"pelicula.h"
+
